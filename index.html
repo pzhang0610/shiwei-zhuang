@@ -1,0 +1,343 @@
+ <!DOCTYPE html>
+
+<html><head>
+<title>Shiwei Zhuang - Jiangsu Normal University</title>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+<style type="text/css">
+ @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+
+	body
+	{
+	font-family:"Roboto",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:300;
+    	background-color : #CDCDCD;
+	}
+    	.content
+	{
+    		width : 900px;
+    		padding : 25px 30px;
+    		margin : 25px auto;
+    		background-color : #fff;
+    		box-shadow: 0px 0px 10px #999;
+    		border-radius: 15px; 
+	}	
+	table
+	{
+		padding: 5px;
+	}
+	
+	table.pub_table,td.pub_td1,td.pub_td2
+	{
+		padding: 8px;
+		width: 850px;
+        border-collapse: separate;
+        border-spacing: 15px;
+        margin-top: -5px;
+	}
+
+	td.pub_td1
+	{
+		width:50px;
+	}
+    td.pub_td1 img
+    {
+        height:120px;
+        width: 160px;
+    }
+	
+	div#container
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 820px;
+		text-align: left;
+		position: relative;
+		background-color: #FFF;
+	}
+	div#DocInfo
+	{
+		color: #1367a7;
+		height: 158px;
+	}
+	h4,h3,h2,h1
+	{
+		color: #3B3B3B;
+	}
+	h2
+	{
+		font-size:130%;
+	}
+	p
+	{
+		color: #5B5B5B;
+		margin-bottom: 50px;
+	}
+	p.caption
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 600px;
+	}
+	p.caption2
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 800px;
+	}
+	#header_img
+	{
+		position: absolute;
+		top: 0px; right: 0px;
+    }
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+
+    #jsnu_logo {
+        position: absolute;
+        left: 646px;
+        top: 14px;
+        width: 100px;
+        height: 20px;
+    }
+   
+    table.pub_table tr {
+        outline: thin dotted #666666;
+    }
+    .papericon {
+        border-radius: 8px; 
+        -moz-box-shadow: 3px 3px 6px #888;
+        -webkit-box-shadow: 3px 3px 6px #888;
+        box-shadow: 3px 3px 6px #888;
+	height:120px;
+        width: 160px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:5px;
+    }
+    .media {
+	outline: thin dotted #666666;
+ 	margin-bottom: 15px;	
+	margin-left:10px;
+    }
+    .media-body {
+	margin-top:5px;
+	padding-left:20px;
+    }
+
+.papers-selected h5, .papers-selected h4 { display : none; }
+.papers-selected .publication { display : none; }
+.paperhi-only { display : none; }
+.papers-selected .paperhi { display : flex; }
+.papers-selected .paperlo { display : none; }
+
+.hidden>div {
+	display:none;
+}
+
+.visible>div {
+	display:block;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23931362-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23931362-2');
+</script>
+
+<script type="text/javascript">
+    var myPix = new Array("imgs/profile.png","imgs/profile.png")
+    function choosePic() {
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        document.getElementById("myPicture").src = myPix[randomNum];
+    };
+</script>
+
+<script>
+$(document).ready(function() {
+  $('.paperlo button').click(function() {
+     $('.papers-container').addClass('papers-selected');
+  });
+  $('.paperhi button').click(function() {
+     $('.papers-container').removeClass('papers-selected');
+  });
+  $('.papers-container').removeClass('papers-selected');
+
+		$('.text_container').addClass("hidden");
+
+		$('.text_container').click(function() {
+			var $this = $(this);
+
+			if ($this.hasClass("hidden")) {
+				$(this).removeClass("hidden").addClass("visible");
+
+			} else {
+				$(this).removeClass("visible").addClass("hidden");
+			}
+		});
+
+});
+</script>
+
+</head>
+
+
+<body>
+<div class="content">
+	<div id="container">
+
+	<table>
+	<tbody><tr>
+	<td><img id="myPicture" src="imgs/profile.png" style="float:left; padding-right:20px" width="180px" height="200px"></td>
+	<script>choosePic();</script>
+	<td>
+	<div id="DocInfo">
+		<h1>Shiwei Zhuang</h1>
+		Assistant Professor<br>
+		College of Physics and Electronic Engineering<br>
+		Jiangsu Normal University, China<br>
+        Office: 7#206<br>
+		Email: <a href="zhuangshiwei@jsnu.edu.cn">zhuangshiwei [at] jsnu.edu.cn</a><br>
+		<a href="./source/CV_web.pdf">CV</a> &bull; <a href="https://scholar.google.com/citations?user=-B1HiFgAAAAJ&hl=en">Google Scholar</a> &bull; <a href="https://www.researchgate.net/profile/Shiwei_Zhuang ">Research Gate</a> &bull; <a href="https://orcid.org/0000-0001-8376-269X">OCRID</a><br>
+	</div><br>
+  
+
+    <div id="jsnu_logo">
+        <img src="imgs/jsnu_logo.png" width="120" height="110"/></a>
+    </div>
+
+	</td>
+	</tr>
+	</tbody></table>
+	<br>
+
+	<h2>About Me</h2>
+	<ul>
+		Greetings！I was born in Oct. 1990. I received my bachelor and doctor degree on Microelectronics and Solid State Electronics from <a href="http://global.jlu.edu.cn/User/Index/index">Jilin University</a> supervised by 
+		Prof. <a href="http://ee.jlu.edu.cn/info/1018/1765.htm" >Baolin Zhang</a>. Since 2018, I have been working as an assistant professor in <a href="http://en.jsnu.edu.cn">Jiangsu Normal University</a>.
+		My research interest includes semiconductor optoelectronic materials, device research. Currently I am mainly engaged in integrated circuit etching/deposition process and related research.
+	</ul>
+
+	<!--
+	<h2>Research</h2>
+    <ul>
+        <li>Computer Vision, Machine Learning, Gait recognition, Person re-identification, GAN</li> 
+
+    </ul>
+	-->
+    <h2>News</h2>
+    <ul>
+		<li>[2019/09/25] 1 paper is accepted to J MATER SCI-MATER EL. </li>
+		<li>[2019/03/26] Attending the CSTIC 2019 and SEMICON China in Shanghai. </li>
+		<li>[2018/12/11] A poster is displayed at MRAM session of IEDM 2018.</li>
+    </ul>
+
+<div class="papers-container papers-selected"> 
+	<h5 class="paperlo">All Publications<button type="button" class="ml-3 btn btn-light"> Show selected</button></h5>
+	<h5 class="paperhi paperhi-only">Selected Publications<button type="button" class="ml-3 btn btn-light"> Show all</button></h5>
+
+	<h5 class="pt-2 pb-1">Journals</h5>	
+
+	<div class="publication media paperhi">
+           <img src="imgs/ci_air.png" class="papericon">
+           <div class="media-body"><b>Air-stable all inorganic green perovskite light emitting diodes based on ZnO/CsPbBr3/NiO heterojunction structure.</b><br>
+			   <b>Shiwei Zhuang</b>, Xue Ma, Daqiang Hu, Xin Dong, Baolin Zhang.<br><i>Ceramics International, 2019.</i><br>[<a href="https://www.sciencedirect.com/science/article/pii/S0272884217327426?_rdoc=1&_fmt=high&_origin=gateway&_docanchor=&md5=b8429449ccfc9c30159a5f9aeaa92ffb">PDF</a>]
+	</div></div>
+
+		
+	<!--	
+	<h2>Teaching</h2>
+		<ul>
+			<li><a href="https://course.ie.cuhk.edu.hk/~ierg6130/">IERG6130 Reinforcement Learning</a>, 2nd Term 2018-2019</li>
+			<li><a href="https://course.ie.cuhk.edu.hk/~ierg3050/">IERG3050 Simulation and Statistical Analysis</a>, 1st Term 2019-2020</li>
+		</ul>
+	-->
+<div class="text_container">		
+    <h2>Honors</h2>
+	<div>
+        <ul>
+			<li> Outstanding Reviewer by Journal of Alloys and Compounds.</li>
+        </ul>    
+	</div>
+</div>
+<!--
+<div class="text_container">
+    <h2>Talks</h2>
+	<div>
+    <ul>
+        <li><a href="ppt/presentation_ICML_workshop.pdf">Interpreting Deep Visual Representations</a> at <a href="http://icmlviz.github.io/">Workshop on Visualization for Deep Learning</a>, ICML'17, Sydney.</li>
+        <li><a href="ppt/presentation_CVPR17_oraltalk.pdf">Network Dissection: Quantifying the Interpretability of Deep Visual Representations</a>, CVPR'17, Hawaii.</li>
+        <li><a href="http://deeplearning.csail.mit.edu/">Tutorial on the Deep Learning for Objects and Scenes</a>, CVPR'17, Hawaii.</li>
+        <li><a href="ppt/understandCNN_tufts.pdf">Understand and Leverage the Internal Representations of CNNs</a> at Tufts, Cornell Tech, Harvard. </li>
+        <li><a href="publication/scene_challenges2016.pdf">Challenges in Deep Sceen Understanding</a> at ECCV'16 ILSVRC and COCO joint workshop, Oct. 2016, Amsterdam.</li> 
+        <li><a href="http://places.csail.mit.edu/slide_iclr2015.pdf">Object Detectors Emerge in Deep Scene CNNs</a> at ICLR'15, May 2015, San Diego.</li>
+        <li><a href="">Learning Deep Features for Scene Recognition</a> at NIPS'14, Dec. 2014, Montreal.</li>
+        <li><a href="http://mmlab.ie.cuhk.edu.hk/projects/collectiveness/presentation_cvpr2013.pdf">Measuring Crowd Collectiveness</a> at CVPR'13, June 2013, Portland.</li>
+        <li><a href="http://mmlab.ie.cuhk.edu.hk/projects/dynamicagent/presentation_ppt.pdf">Understanding Crowd Behaviors</a> at CVPR'12, June 2012, Rhode Island.</li>
+    </ul>
+	</div>
+</div>
+-->
+<!--
+<div class="text_container">
+    <h2>Media coverage</h2>
+	<div>
+    <ul>
+        <li><a href="https://venturebeat.com/2018/09/14/mit-csail-designs-ai-that-can-track-objects-over-time/">VentureBeat</a>: MIT CSAIL designs AI that can track objects over time.</li>
+        <li><a href="http://news.mit.edu/2018/machine-learning-video-activity-recognition-0914">MIT News</a>: Helping computers fill in the gaps between video frames.</li>
+        <li><a href="https://qz.com/1022156/mit-researchers-can-now-track-artificial-intelligences-decisions-back-to-single-neurons/">Quartz</a>: Track AI decisions back to single neurons.</li>
+        <li><a href="http://news.mit.edu/2017/inner-workings-neural-networks-visual-data-0630">MIT News</a>: Peering into neural networks.</li>
+        <li><a href="https://techcrunch.com/2017/06/30/mit-csail-research-offers-a-fully-automated-way-to-peer-inside-neural-nets/">TechCrunch</a>: A fully automated way to peer inside neural networks.</li>
+        <li><a href="https://www.csail.mit.edu/csail_computer_vision_team_leads_scene_parsing_challenge%20">MIT CSAIL News</a>: Scene parsing and scene classification challenges.</li>
+        <li><a href="http://techcrunch.com/2015/05/08/ai-project-designed-to-recognize-scenes-surprises-by-identifying-objects-too/" target="_blank">TechCrunch</a> and <a href="http://newsoffice.mit.edu/2015/visual-scenes-object-recognition-0508" target="_blank">MIT News</a>: Object detectors emerge in CNNs.</li>
+    </ul>
+	</div>
+</div>
+-->
+<div class="text_container"> 
+    <h2>Datasets & Benchmarks</h2>
+	<div>	
+    <ul>
+    </ul>
+	</div>
+</div>
+
+
+<div class="text_container">
+    <h2>Professional activities</h2>
+	<div>
+    <ul>
+	    <li>Journal reviewer of Journal of Alloys and Compounds and Physica B: Condensed Matter.</li>
+    </ul>        
+	</div>
+</div>
+<!--
+    <h2>Collaborators</h2>
+    <ul>
+        <li>I am fortunate to work with these great people: <a href="http://cvcl.mit.edu/Aude.htm">Aude Oliva</a>(MIT), <a href="http://vision.princeton.edu/people/xj/">Jianxiong Xiao</a>(Princeton), <a href="http://www.cvc.uab.es/~agata/">Agata Lapedriza</a>(UOC), <a href="http://dusp.mit.edu/faculty/jinhua-zhao">Jinhua Zhao</a>(MIT), <a href="http://www.ee.cuhk.edu.hk/~xgwang/">Xiaogang Wang</a>(CUHK), <a href="http://www.ie.cuhk.edu.hk/people/xotang.shtml">Xiaoou Tang</a>(CUHK), <a href="http://ins.sjtu.edu.cn/faculty/zhanghepeng">Hepeng Zhang</a>(SJTU), <a href="http://bcmi.sjtu.edu.cn/~zhangliqing/">Liqing Zhang</a>(SJTU), <a href="http://www.houxiaodi.com/">Xiaodi Hou</a>(Caltech), <a href="http://liuliu.us/">Liu Liu</a>(MIT), <a href="http://people.csail.mit.edu/khosla/">Aditya Khosla (MIT)</a>, Robinson Piramuthu(eBay Research Labs), Vignesh Jagadeesh(eBay Research Labs), Yuandong Tian(FB), Rob Fergus(NYU&FB), Arthur Szlam(FB), Sainbayar
+        Sukhbaatar(NYU), Zi Wang (MIT), Stefanie Jegelka (MIT), Hang Zhao (MIT), Xavier Puig (MIT), Sanja Fidler (UToronto), Larry Zitnick(FB).</li>
+    </ul>
+<div class="text_container">
+    <h2>Personal interests</h2>
+    <ul>
+    <li>blogs:<a href="http://urbancomputation.wordpress.com/" target="_parent">Urban Computation</a>,<a href="https://crowdbehaviordotorg.wordpress.com/" target="_parent">Crowd Behavior &amp; Psychology</a></li>
+    <li><a href="book.html">books</a>, <a href="image/beacon_hill.jpg">rock climbing (5.11C,V6)</a>, <a href="bolei_juggle.mp4">juggling</a> (recently), <a href="image/bass.jpg">bass player</a> (former <a href="image/i3.jpg">lead guitarist</a>)</a> </li>
+    </ul>
+</div>
+
+   --> 
+
+</div>
+</div>
+</body></html>
+
